@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mercado Futbolero</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">⚽ Mercado Futbolero</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="bg-light py-5 text-center">
+    <div class="container">
+      <h1 class="display-4">Tu tienda de implementos de fútbol</h1>
+      <p class="lead">Encuentra todo lo que necesitas para tu juego: balones, camisetas, botines y más.</p>
+    </div>
+  </header>
+<div class="container my-4 text-end">
+  <div id="carrito-contador" style="cursor:pointer;" class="fw-bold">🛒 (0)</div>
+  <div id="carrito-dropdown" class="bg-light border rounded p-2 mt-2" style="display:none; max-width: 300px; margin-left:auto;">
+    <h6>Productos en el carrito:</h6>
+    <ul id="carrito-lista" class="list-unstyled mb-0"></ul>
+  </div>
+</div>
+
+  <div class="container my-5">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="balon.webp" class="card-img-top" alt="Balón">
+        <div class="card-body">
+          <h5 class="card-title">Balón Oficial FIFA</h5>
+          <p class="card-text">Balón profesional aprobado por la FIFA.</p>
+          <button class="btn btn-primary">Comprar - $105.000</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="botines.jpg" class="card-img-top" alt="Botines">
+        <div class="card-body">
+          <h5 class="card-title">Botines Nike Mercurial</h5>
+          <p class="card-text">Diseño para velocidad y control.</p>
+          <button class="btn btn-primary">Comprar - $130.000</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="guantes.avif" class="card-img-top" alt="Guantes">
+        <div class="card-body">
+          <h5 class="card-title">Guantes Adidas Pro</h5>
+          <p class="card-text">Protección y agarre para porteros exigentes.</p>
+          <button class="btn btn-primary">Comprar - $70.000</button>
+        </div>
+      </div>
+  </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="camiseta.jpg" class="card-img-top" alt="Camiseta">
+        <div class="card-body">
+          <h5 class="card-title">Camiseta Oficial 2025</h5>
+          <p class="card-text">Versión jugador de la camiseta nacional.</p>
+          <button class="btn btn-primary">Comprar - $75.000</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="spinilleras.jpg" class="card-img-top" alt="Espinilleras">
+        <div class="card-body">
+          <h5 class="card-title">Espinilleras Puma</h5>
+          <p class="card-text">Protección ultraligera para entrenamiento.</p>
+          <button class="btn btn-primary">Comprar - $59.000</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="red.jpg" class="card-img-top" alt="Red">
+        <div class="card-body">
+          <h5 class="card-title">Red Portería Pro</h5>
+          <p class="card-text">Resistente y profesional.</p>
+          <button class="btn btn-primary">Comprar - $96.000</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="balon.entren.webp" class="card-img-top" alt="Balón entrenamiento">
+        <div class="card-body">
+          <h5 class="card-title">Balón de Entrenamiento</h5>
+          <p class="card-text">Duradero y económico para prácticas diarias.</p>
+          <button class="btn btn-primary">Comprar - $60.000</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="set.de.conos.webp" class="card-img-top" alt="Conos">
+        <div class="card-body">
+          <h5 class="card-title">Set de Conos</h5>
+          <p class="card-text">Ideal para entrenamientos de agilidad.</p>
+          <button class="btn btn-primary">Comprar - $30.000</button>
+        </div>
+      </div>
+  </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="pantaloneta.avif" class="card-img-top" alt="Short">
+        <div class="card-body">
+          <h5 class="card-title">Short de Fútbol</h5>
+          <p class="card-text">Cómodo y transpirable, ideal para juego.</p>
+          <button class="btn btn-primary">Comprar - $37.000</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="medias.jpg" class="card-img-top" alt="Medias">
+        <div class="card-body">
+          <h5 class="card-title">Medias de Compresión</h5>
+          <p class="card-text">Soporte y confort en cada partido.</p>
+          <button class="btn btn-primary">Comprar - $20.000</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="bolso.avif" class="card-img-top" alt="Bolso">
+        <div class="card-body">
+          <h5 class="card-title">Bolso Deportivo</h5>
+          <p class="card-text">Espacioso y resistente para tus implementos.</p>
+          <button class="btn btn-primary">Comprar - $45.000</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="chaleco.webp" class="card-img-top" alt="Chaleco">
+        <div class="card-body">
+          <h5 class="card-title">Chaleco de Entrenamiento</h5>
+          <p class="card-text">Diferencia a tus equipos fácilmente.</p>
+          <button class="btn btn-primary">Comprar - $24.000</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="barrera.jpg" class="card-img-top" alt="Barrera">
+        <div class="card-body">
+          <h5 class="card-title">Barrera de Tiro</h5>
+          <p class="card-text">Entrena tiros libres como un profesional.</p>
+          <button class="btn btn-primary">Comprar - $160.000</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="cintas.de.capitan.webp" class="card-img-top" alt="Cinta de capitán">
+        <div class="card-body">
+          <h5 class="card-title">Cinta de Capitán</h5>
+          <p class="card-text">Demuestra tu liderazgo en la cancha.</p>
+          <button class="btn btn-primary">Comprar - $18.000</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="silbato.webp" class="card-img-top" alt="Silbato">
+        <div class="card-body">
+          <h5 class="card-title">Silbato Profesional</h5>
+          <p class="card-text">Con buen sonido para tus goles.</p>
+          <button class="btn btn-primary">Comprar - $20.000</button>
+        </div>
+      </div>
+
+    </div>
+    <script src="script.js"></script>
+  </div>
+  <footer class="bg-dark text-white text-center py-4">
+    <p class="mb-0">© 2025 Mercado Futbolero. Derechos SF.</p>
+  </footer>
